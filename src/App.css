@@ -1,38 +1,66 @@
-.App {
+.onglet{
+  display: flex;
+  flex-direction: row;
+}
+
+.ongletHeader{
+  margin: 2rem;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  background-color: black;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+/* Changes for when using Onglet on mobile */
+@media (max-width: 800px) {
+  .onglet {
+    flex-direction: column;
+  }
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+.main{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.block{
+  display: flex;
+  flex-direction: row;
+  background-color: beige;
+  border-radius: 2em;
+  margin: 2em;
+  align-items: center;
+}
+
+.titleAndContent{
+  display: flex;
+  flex-direction: column;
+}
+
+.textRight{
+  text-align: end;
+}
+
+.textCenter{
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.callToAction{
+  text-align: center;
+  background-color: red;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-weight: bold;
+  border-radius: 1rem;
+  padding: 1%;
 }
